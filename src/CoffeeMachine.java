@@ -40,7 +40,7 @@ public class CoffeeMachine {
         }
 
     }
-    void selectC() {
+    public void selectC() {
         System.out.println("어떤 커피를 구매하시겠습니까 ?");
         System.out.println("1. 에스프레소 (가격 : 4000원)");
         System.out.println("2. 라떼 (가격 : 7000원)");
@@ -48,6 +48,7 @@ public class CoffeeMachine {
         int menuC = Integer.parseInt(scanner.nextLine());
         switch (menuC) {
             case 1:
+                Latte.LatteM();
                 break;
             case 2:
                 break;
@@ -55,6 +56,7 @@ public class CoffeeMachine {
                 break;
         }
     }
+
 
     void fill() {
         System.out.println("추가할 물의 양을 입력하세요");
