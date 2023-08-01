@@ -36,6 +36,9 @@ public class CoffeeMachine {
                     isRun = false;
                     System.out.println("커피머신이 종료되었습니다.");
                     break;
+                default:
+                    System.out.println("유효하지 않은 입력입니다.");
+                    break;
             }
         }
 
@@ -48,11 +51,16 @@ public class CoffeeMachine {
         int menuC = Integer.parseInt(scanner.nextLine());
         switch (menuC) {
             case 1:
-                Latte.LatteM();
+                Espresso.EspressoM();
                 break;
             case 2:
+                Latte.LatteM();
                 break;
             case 3:
+                Cappuccino.CappuccinoM();
+                break;
+            default:
+                System.out.println("유효하지 않은 입력입니다. 처음으로 되돌아갑니다.");
                 break;
         }
     }
