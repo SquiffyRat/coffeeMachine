@@ -1,6 +1,7 @@
 public class CurrentMachine {
 
 
+
     static int water = 400;
     static int milk = 540;
     static int coffeeBean = 120;

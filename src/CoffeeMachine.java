@@ -22,23 +22,14 @@ public class CoffeeMachine {
             int selectNumber = Integer.parseInt(scanner.nextLine());
 
             switch (selectNumber) {
-
-                case 1:
-                    selectC();
-                    break;
-                case 2:
-                    fill();
-                    break;
-                case 3:
-                    withdraw();
-                    break;
-                case 4:
+                case 1 -> selectC();
+                case 2 -> fill();
+                case 3 -> withdraw();
+                case 4 -> {
                     isRun = false;
                     System.out.println("커피머신이 종료되었습니다.");
-                    break;
-                default:
-                    System.out.println("유효하지 않은 입력입니다.");
-                    break;
+                }
+                default -> System.out.println("유효하지 않은 입력입니다.");
             }
         }
 
@@ -50,18 +41,10 @@ public class CoffeeMachine {
         System.out.println("3. 카푸치노 (가격 : 6000원)");
         int menuC = Integer.parseInt(scanner.nextLine());
         switch (menuC) {
-            case 1:
-                Espresso.EspressoM();
-                break;
-            case 2:
-                Latte.LatteM();
-                break;
-            case 3:
-                Cappuccino.CappuccinoM();
-                break;
-            default:
-                System.out.println("유효하지 않은 입력입니다. 처음으로 되돌아갑니다.");
-                break;
+            case 1 -> Espresso.EspressoM();
+            case 2 -> Latte.LatteM();
+            case 3 -> Cappuccino.CappuccinoM();
+            default -> System.out.println("유효하지 않은 입력입니다. 처음으로 되돌아갑니다.");
         }
     }
 
