@@ -5,8 +5,13 @@
  - src/CoffeeMachine.java의 메인 메소드 실행
 
 ## 사용된 기술
- - Java
+ - Java 기초
  - OOP
-
-### 메소드
- - 커피 구매 : ~~메소드, ~~기능을 답았습니다.
+ - 
+### 구성 요소
+ - CoffeeMachine
+ - CurrentMachine
+ - CoffeeC(interface)
+ - Latte
+ - Cappuccino
+ - Espresso
