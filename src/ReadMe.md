@@ -7,8 +7,10 @@
 ## 사용된 기술
  - Java 기초
  - OOP
- - 
-### 구성 요소
+
+
+
+## 구성 요소
  - CoffeeMachine
  - CurrentMachine
  - CoffeeC(interface)
